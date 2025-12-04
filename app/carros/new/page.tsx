@@ -26,26 +26,14 @@ export default function NewCarro() {
     }
 
     return (
-        <div>
-            <br />
-            <h1>Cadastrar Carro</h1>
-            <br />
+       <div className="card">
+        <h1 className="text-2xl font-bold mb-4">Cadastrar Carro</h1>
 
-            <input
-                type="text"
-                id="marca"
-                placeholder="Digite a marca do carro"
-            />
-            <br />
+        <input id="marca" className="input" placeholder="Marca" />
+        <input id="portas" className="input" placeholder="Quantidade de portas" />
 
-            <input
-                type="number"
-                id="portas"
-                placeholder="Quantidade de portas"
-            />
-            <br />
+        <button className="btn" onClick={saveCar}>Salvar</button>
+       </div>
 
-            <button onClick={saveCarro}>Salvar</button>
-        </div>
     );
 }

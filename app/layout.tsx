@@ -2,6 +2,18 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+<body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+  <nav>
+    <a href="/carros">Listar Carros</a>
+    <a href="/carros/new">Cadastrar Carro</a>
+  </nav>
+
+  <main>
+    {children}
+  </main>
+</body>
+
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],

@@ -21,10 +21,8 @@ export default async function Carros() {
     }
 
     return (
-        <div>
-            <br />
-            <h1>Lista de Carros</h1>
-
+        <div className="card">
+            <h1 className="text-2xl font-bold mb-4">Lista de Carros</h1>
             <table border={3}>
                 <thead>
                     <tr>
