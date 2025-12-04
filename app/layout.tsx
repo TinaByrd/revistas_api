@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Carros API",
-  description: "Projeto de CRUD de carros usando MockAPI",
+  title: "Revistas API",
+  description: "Projeto de CRUD de revistas usando MockAPI",
 };
 
 export default function RootLayout({
@@ -26,8 +26,8 @@ export default function RootLayout({
     <html lang="pt-br">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <nav className="flex gap-6 p-4 border-b">
-          <a href="/carros">Listar Carros</a>
-          <a href="/carros/new">Cadastrar Carro</a>
+          <a href="/revistas">Listar Revistas</a>
+          <a href="/revistas/new">Cadastrar Revista</a>
         </nav>
 
         <main className="p-4">
