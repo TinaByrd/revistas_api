@@ -16,9 +16,11 @@ export default function DeleteCarro() {
     }
 
     return (
-        <div>
-            <h1>Confirmar exclusão do carro?</h1>
-            <button onClick={deleteCarro}>Confirmar</button>
+        <div className="card text-center">
+            <h1 className="text-xl font-bold mb-4">Confirmar Exclusão?</h1>
+
+            <button className="btn-danger" onClick={deleteCar}>Excluir</button>
         </div>
+
     );
 }
